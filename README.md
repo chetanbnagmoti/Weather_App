@@ -1,11 +1,11 @@
 # Weather_App
-In this app used HTML,BootStrpas,JavaScript, and Node.js for backend Server creted.
+In this app used HTML,Bootstrap,Javascript, and Node.js for backends Servers created.
 
-This is Wether App:--
+This is Weather App:--
 
 ![image](https://user-images.githubusercontent.com/119286565/220435266-81c3e353-35c4-460c-8670-cfe2242bdfe5.png)
 
-############### Step TO Run This App Are Following  ##############
+############### Step TO Run This App Are Followings  ##############
 
 step 1:-Open CMD 
 
@@ -25,7 +25,7 @@ step 4:-Enter Any City Name:- like Dhule
 
 ![5](https://user-images.githubusercontent.com/119286565/220434232-bed9652e-2c14-41ce-995d-53223dac6c33.png)
 
-Note:-You Enter Wrong City Name Then Alert Massgae Come Like This:-
+Note:-You Enter Wrong City Name Then Alerts Massgae Come Like This:-
 
 ![6](https://user-images.githubusercontent.com/119286565/220434539-7bce43af-960d-4491-b455-7a72beedcc29.png)
 
