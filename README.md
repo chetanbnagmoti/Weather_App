@@ -1,5 +1,6 @@
 # Weather_App
 In this app used HTML,BootStrpas,JavaScript, and Node.js for backend Server creted.
+
 step 1:-Open CMD 
 
 Step 2:-node server.js
