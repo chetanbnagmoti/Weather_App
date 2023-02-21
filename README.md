@@ -1,7 +1,7 @@
 # Weather_App
 In this app used HTML,BootStrpas,JavaScript, and Node.js for backend Server creted.
 
-Thihs Is Wether App:--
+This is Wether App:--
 
 ![image](https://user-images.githubusercontent.com/119286565/220435266-81c3e353-35c4-460c-8670-cfe2242bdfe5.png)
 
