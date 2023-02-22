@@ -31,7 +31,7 @@ button.addEventListener("click", function () {
   fetch(
     "https://api.openweathermap.org/data/2.5/forecast?q=" +
       inputValue.value +
-      "&appid=07130ba22bd492452681e1502215fd55"
+      "&appid={API KEY}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -43,7 +43,7 @@ button.addEventListener("click", function () {
       var secdatevalue = data.list[16].dt_txt;
       var thirdatevalue = data.list[25].dt_txt;
       var foudatevalue = data.list[30].dt_txt;
-      console.log(data);
+    //  console.log(data);
 
       var t17value = data.list[0].main.temp;
       var t18value = data.list[0].main.humidity;
@@ -103,11 +103,7 @@ button.addEventListener("click", function () {
       t19.innerHTML = t19value + "m/s";
       t20.innerHTML = t20value;
 
-      console.log(fidatevalue);
-      console.log(secdatevalue);
-      console.log(thirdatevalue);
-      console.log(foudatevalue);
-      console.log(data.list[0].weather[0].icon);
+      
     })
 
    .catch((err) => alert("Worng city enter !!!! "));
