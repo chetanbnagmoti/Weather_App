@@ -8,7 +8,7 @@ const http = require("http");
 const fs = require("fs");
 const url=require("url");
 const hostName = "127.0.0.1"; //localHost
-const port = 3000;
+const port = 3001;
 
 console.log("Preparing server...");
 
@@ -29,8 +29,8 @@ let fileName ="index.html";  //by default this is root.
   if(q.pathname === "/") {
     fileName="index.html";     //"/" called routs.
   }
-  else if(q.pathname === "/AppWether.js"){
-    fileName="AppWether.js";
+  else if(q.pathname === "/AppWeather.js"){
+    fileName="AppWeather.js";
   }
   
   fs.readFile(fileName, function (err, data) {

@@ -31,18 +31,18 @@ button.addEventListener("click", function () {
   fetch(
     "https://api.openweathermap.org/data/2.5/forecast?q=" +
       inputValue.value +
-      "&appid={API KEY}"
+      "&appid=07130ba22bd492452681e1502215fd55"
   )
     .then((response) => response.json())
     .then((data) => {
 
       var nameValue = data.city.name;
 
-      var sixthdatevalue = myDate(data.list[0].dt_txt) ;
-      var fidatevalue = myDate(data.list[10].dt_txt) ;
-      var secdatevalue = myDate(data.list[16].dt_txt) ;
-      var thirdatevalue = myDate( data.list[25].dt_txt);
-      var foudatevalue =myDate(data.list[30].dt_txt) ;   
+      var sixthdatevalue = myDate(data.list[0].dt_txt) +" - : - "+myTime();
+      var fidatevalue = myDate(data.list[10].dt_txt) +"</br>"+"<h4 style='color:rgb(255, 99, 71);'>"+myTime()+"</h4>";
+      var secdatevalue = myDate(data.list[16].dt_txt)+"</br>"+"<h4 style='color:rgb(255, 99, 71);'>"+myTime()+"</h4>" ;
+      var thirdatevalue = myDate( data.list[25].dt_txt)+"</br>"+"<h4 style='color:rgb(255, 99, 71);'>"+myTime()+"</h4>";
+      var foudatevalue =myDate(data.list[30].dt_txt)+"</br>"+"<h4 style='color:rgb(255, 99, 71);'>"+myTime()+"</h4>";   
 	    
     //  console.log(data);
 
@@ -107,7 +107,7 @@ button.addEventListener("click", function () {
       
     })
 
-   .catch((err) => alert("Worng city enter !!!! "));
+   .catch((err) => alert(inputValue.value+"Wrong city enter !!!! "));
 
   });
 
@@ -121,3 +121,14 @@ var myDate=function(dt){
   const date =new Date(dt);
   return date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear();
 }
+
+var myTime=function(){
+  const date=new Date();
+  if(date.getHours>12){
+    return (date.getHours()-12)+":"+date.getMinutes();
+  }
+  else{
+
+    return (date.getHours())+":"+date.getMinutes();
+  }
+};
