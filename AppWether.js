@@ -38,11 +38,12 @@ button.addEventListener("click", function () {
 
       var nameValue = data.city.name;
 
-      var sixthdatevalue = data.list[0].dt_txt;
-      var fidatevalue = data.list[10].dt_txt;
-      var secdatevalue = data.list[16].dt_txt;
-      var thirdatevalue = data.list[25].dt_txt;
-      var foudatevalue = data.list[30].dt_txt;
+      var sixthdatevalue = myDate(data.list[0].dt_txt) ;
+      var fidatevalue = myDate(data.list[10].dt_txt) ;
+      var secdatevalue = myDate(data.list[16].dt_txt) ;
+      var thirdatevalue = myDate( data.list[25].dt_txt);
+      var foudatevalue =myDate(data.list[30].dt_txt) ;   
+	    
     //  console.log(data);
 
       var t17value = data.list[0].main.temp;
@@ -115,3 +116,8 @@ button.addEventListener("click", function () {
 var diff = (a) => {
   return (a - 273.15).toFixed(2);
 };
+
+var myDate=function(dt){
+  const date =new Date(dt);
+  return date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear();
+}
