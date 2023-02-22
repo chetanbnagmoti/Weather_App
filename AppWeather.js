@@ -31,7 +31,7 @@ button.addEventListener("click", function () {
   fetch(
     "https://api.openweathermap.org/data/2.5/forecast?q=" +
       inputValue.value +
-      "&appid=07130ba22bd492452681e1502215fd55"
+      "&appid={API KEY}"
   )
     .then((response) => response.json())
     .then((data) => {
