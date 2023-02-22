@@ -1,4 +1,8 @@
 # Weather_App
+In This App I am Used Third Party Weather App Data  => From Simple and fast and free weather API from OpenWeatherMap you have access to current weather data =
+
+From THIS WEBSITE YOU HAVE GENERETED YOUR ON API KEY AND INSERTED IN THE AppWeather.js file.
+
 In this app used HTML,Bootstrap,Javascript, and Node.js for backends Servers created.
 
 This is Weather App:--
